@@ -1,0 +1,29 @@
+# standard login details
+[user]
+    name = Mackie Burgess
+    email = mackie.burgess@gmail.com
+
+# uni folder uses my univeristy gitlab account
+[includeIf "gitdir:~/Repos/uni/"]
+    path = ~/.config/git/uni_config
+
+[init]
+    defaultBranch = "main"
+
+# nvim difftool I copy/pasted from online
+# https://oozou.com/til/use-neovim-as-a-git-difftool-57
+[difftool]
+    prompt = true
+[diff]
+    tool = nvimdiff
+[difftool "nvimdiff"]
+    cmd = "nvim -d \"$LOCAL\" \"$REMOTE\""
+
+
+# another thing I stole that makes a pretty git log graph
+# https://github.com/tjdevries/config_manager/blob/1b7d2f60ed6685022e29c1bdef2625bb7856e1eb/xdg_config/git/config#L20
+[alias]
+    lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
+
+[url "https://"]
+    insteadOf = git://
