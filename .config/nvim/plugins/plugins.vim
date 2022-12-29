@@ -38,7 +38,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
   Plug 'nvim-treesitter/playground'
   Plug 'windwp/nvim-ts-autotag'
 
-  " lspconfig: language server stuff (WIP)
+  " lspconfig: language server
   Plug 'neovim/nvim-lspconfig'
 
 call plug#end()

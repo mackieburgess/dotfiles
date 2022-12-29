@@ -11,11 +11,12 @@ set path+=**
 set scrolloff=2
 set signcolumn=yes:1
 
-set tabstop=4     " tabs are 4 long
-set softtabstop=4 " tabs are 4 long
-set shiftwidth=4  " tabs are 4 long
-set expandtab     " tabs are 4 _spaces_
-set autoindent    " auto-indentation
+" tabstop stuff
+set tabstop=4
+set softtabstop=4
+set shiftwidth=4
+set expandtab
+set autoindent
 
 " listchars settings
 set listchars=tab:»·,trail:-,nbsp:+
