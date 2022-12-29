@@ -1,7 +1,7 @@
 # version control information
 setopt prompt_subst
 autoload -Uz vcs_info
-precmd() { vcs_info }
+precmd() { vcs_info 2> /dev/null }
 zstyle ':vcs_info:git*' formats ' %B%F{yellow}%b%f'
 
 #       ._____________[user@machine]___________. ._____( currentdir git_info )_____. ._____________λ_____________.
