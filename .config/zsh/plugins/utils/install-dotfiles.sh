@@ -1,7 +1,7 @@
 git clone --bare git@github.com:mackieburgess/dotfiles.git $HOME/.config/dotfiles
 
 function dotfiles {
-   /usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME $@
+   /usr/bin/git --git-dir=$HOME/.config/dotfiles --work-tree=$HOME $@
 }
 
 mkdir -p $HOME/.cache/config-backup
