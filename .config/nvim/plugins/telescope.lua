@@ -32,7 +32,7 @@ require('telescope').setup {
             hidden = true,
             initial_mode = 'normal',
         },
-    }
+    },
 }
 
 require('telescope').load_extension('fzf')
