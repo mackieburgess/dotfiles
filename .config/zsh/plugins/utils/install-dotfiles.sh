@@ -16,3 +16,4 @@ fi;
 
 dotfiles checkout
 
+cat $HOME/.config/dotfiles_ignore > $HOME/.config/dotfiles/info/exclude
