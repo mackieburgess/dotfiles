@@ -23,6 +23,7 @@ local on_attach = function(client, bufnr)
   buf_set_keymap('n', '<leader>li', '<cmd>LspInfo<CR>' , opts)
   buf_set_keymap('n', '<leader>lf', '<cmd>lua vim.diagnostic.open_float()<CR>', opts)
   buf_set_keymap('n', '<leader>lr', '<cmd>lua vim.lsp.buf.rename()<CR>', opts)
+  buf_set_keymap('n', '<leader>ll', '<cmd>LspRestart<CR>', opts)
 end
 
 local servers = { 'rust_analyzer', 'pyright', 'cssls', 'html', 'intelephense', 'tsserver' }
