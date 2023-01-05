@@ -5,7 +5,7 @@ alias vimrc="nvim \"+cd %:h\" ~/.config/nvim/init.vim"
 alias alarc="nvim \"+cd %:h\" ~/.config/alacritty/alacritty.yml"
 alias tmxrc="nvim \"+cd %:h\" ~/.config/tmux/.tmux.conf"
 
-alias src="source ~/.config/zsh/.zshrc && echo 'zshrc sourced!'"
+alias src="source ~/.config/zsh/.zshrc && source ~/.zshenv && echo 'zshrc sourced!'"
 
 # : modified builtins
 alias ls="lsd -A"
@@ -32,8 +32,11 @@ alias moon="curl -s wttr.in/moon | head -23"
 alias tn="tmux -u -f $TMUX_CONFIG new"
 alias ta="tmux -u -f $TMUX_CONFIG attach"
 
-# : dotfiles
+# : dotfiles and notes
 alias dotfiles="/usr/bin/git --git-dir=$XDG_CONFIG_HOME/dotfiles --work-tree=$HOME"
+alias gnote="/usr/bin/git --git-dir=$NOTES/.git --work-tree=$NOTES"
+# start a new note in insert mode
+alias note="$EDITOR \"+cd %:h\" \"+star\" $NOTES/..."
 
 # : shows all aliases
 alias aliases="cat $HOME/.config/zsh/aliases.zsh | rg ^alias"

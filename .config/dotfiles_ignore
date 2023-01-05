@@ -9,3 +9,8 @@
 .config/git/uni_config
 .ssh/id*
 .ssh/known_hosts*
+/Documents/
+/Downloads/
+/Library/
+/Desktop/
+/.Trash/
