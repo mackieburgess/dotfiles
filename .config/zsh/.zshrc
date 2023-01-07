@@ -49,6 +49,7 @@ export LESSHISTFILE="/dev/null"
 
 # neovim as a default editor
 export EDITOR='nvim'
+export MANPAGER="sh -c 'col -bx | bat -l man -p'"
 
 # brew never shutting up
 export HOMEBREW_NO_ENV_HINTS=true
