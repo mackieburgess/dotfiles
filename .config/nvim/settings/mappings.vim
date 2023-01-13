@@ -45,7 +45,3 @@ cmap <c-\> \(\)<Left><Left>
 " TODO: get counts to work
 vnoremap > >gv
 vnoremap < <gv
-
-" ca: run a Command on All lines
-nnoremap <leader>ca ggVG:
-

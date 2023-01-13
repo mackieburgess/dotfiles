@@ -14,7 +14,8 @@ if g:colors_name == "sonokai"
   hi StatusOther   ctermfg=235 ctermbg=250 guifg=#2b2d3a guibg=#e1e3e4
   hi StatusDim     ctermfg=246 ctermbg=237 guifg=#949494 guibg=#393e53
   hi ColorCol                  ctermbg=237               guibg=#393e53
+
+  " colourcolumn matching
+  match ColorCol /\%80v./
 endif
 
-" colourcolumn matching
-match ColorCol /\%80v./
