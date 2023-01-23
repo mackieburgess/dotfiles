@@ -36,7 +36,7 @@ alias ta="tmux -u -f $TMUX_CONFIG attach"
 alias dotfiles="/usr/bin/git --git-dir=$XDG_CONFIG_HOME/dotfiles --work-tree=$HOME"
 alias gnote="/usr/bin/git --git-dir=$NOTES/.git --work-tree=$NOTES"
 # start a new note in insert mode
-alias note="$EDITOR \"+cd %:h\" \"+star\" $NOTES/..."
+alias note="$EDITOR \"+cd $NOTES\" \"+star\""
 
 # : shows all aliases
 alias aliases="cat $HOME/.config/zsh/aliases.zsh | rg ^alias"
