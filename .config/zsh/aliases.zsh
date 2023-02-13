@@ -25,6 +25,8 @@ alias vi="nvim"
 alias nv="nvim"
 alias v="nvim"
 
+alias fnv="fd --type f --hidden --exclude .git --exclude Library | fzf-tmux -p --reverse | xargs nvim"
+
 # : just fun
 alias moon="curl -s wttr.in/moon | head -23"
 
